@@ -1,0 +1,253 @@
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Questrial&family=Raleway:ital,wght@0,100..900;1,100..900&family=Sedan:ital@0;1&display=swap');
+*{
+    font-family: "Questrial", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    padding: 5px;
+    margin: 5px;
+}
+
+#nav-container {
+  display: flex;
+  justify-content: flex-end; /* Align items to the right */
+  align-items: center; /* Center items vertically */
+  gap: 0.5rem;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
+  z-index: 1000; /* Optional: Ensure it stays above other content */
+  padding: 1rem;
+}
+
+#nav-container .container-fluid {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+#nav-container .navbar-brand {
+  margin-right: auto; /* Pushes the brand to the left */
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: black; /* or any color you prefer */
+  font-size: 1.5rem; /* Increase font size */
+}
+
+.navbar-brand img {
+  margin: 0 8px 0 5rem; /* spacing between image and text */
+  width: 40px; /* Adjust image width */
+  height: 40px; /* Adjust image height */
+}
+
+#nav-container a {
+  cursor: pointer;
+  text-decoration: none;
+  color: black; /* or any color you prefer */
+}
+
+#nav-container a:hover {
+  text-decoration: underline; /* Optional hover effect */
+}
+
+
+.links{
+  margin: 0 5rem 0 0;
+}
+
+
+a:hover {
+  text-decoration: underline; /* optional hover effect */
+}
+
+#root{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    width: 100%;
+}
+
+#avatar{
+    display: flex;
+    background-image: url(https://4.bp.blogspot.com/-Me3-M0U9XIU/Tn3Wr7YJDsI/AAAAAAAAAO0/EcrlIFlGEwM/s1600/family+dogs-473268.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    transition: all .3s ease-in-out;
+}
+/* #tech-skills{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+} */
+#intro {
+    display: flex;
+    justify-content: center;
+    align-items: left;
+    flex-direction: column; /* Ensure items are displayed vertically */
+    gap: 1rem;
+}
+
+#introduction{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+} 
+#tech{
+    width: 50px;
+    height: 50px;
+    filter: grayscale(100%) brightness(50%);
+}
+.logo{
+    width: 60px;
+    height: 60px;
+    filter: brightness(100%);
+}
+.fonts{
+    font-family:"Courier Prime", monospace;
+    font-weight: 400;
+    font-style: normal;
+}
+#sites{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+}
+
+#main{
+    display: flex;
+    height: 100vh;
+    width: 80%;
+    justify-content: center;
+    align-items: center;
+}
+.left-side .right-side{
+    flex: 1;
+    padding: 20px;
+    box-sizing: border-box;
+}
+.left-side{
+    width: 50%;
+}
+.right-side{
+    width: 50%;
+    animation: transitionIn 0.75s;
+}
+.right-side .content #my_projects{
+  animation: transitionIn 0.75s;
+}
+
+.right-side .content #intro{
+  animation: transitionIn 0.75s;
+}
+.right-side .content .contactme{
+  animation: transitionIn 0.75s;
+}
+.contactme{
+    margin-bottom: 3rem;
+}
+
+.sites {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+    text-align: center; /* Center text inside elements */
+    position: fixed; /* Position the footer fixed */
+    bottom: 0; /* Stick it to the bottom of the viewport */
+    width: 100%; /* Make it take the full width */
+    background-color: #fff; /* Optional: Add a background color */
+}
+
+.sites img {
+    margin: 1px; /* Add margin to images for spacing */
+    width: 48px; /* Set width of images */
+    height: 48px; /* Set height of images */
+}
+
+.icon-container {
+    display: flex; /* Display images side by side */
+    justify-content: center; /* Center images horizontally */
+    margin-bottom: 1px; /* Add some bottom margin */
+}
+
+
+/*  */
+.carousel_container {
+    padding: 5rem 0 0 0;
+    width: 70%;
+    margin: auto;
+  }
+  
+  .carousel-inner {
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .card_item {
+    display: none; /* Initially hide all cards */
+  }
+  
+  .card_item.active {
+    display: flex; /* Display only the active card */
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #fff;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .card-img-top {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 20px;
+  }
+  
+  .carousel_nav_btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    border: none;
+    font-size: 18px;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    z-index: 1;
+  }
+  
+  .carousel_nav_btn._prev {
+    left: -20px; /* Adjust as needed to position closely */
+  }
+  
+  .carousel_nav_btn._next {
+    right: -20px; /* Adjust as needed to position closely */
+  }
+  
+  .carousel {
+    position: relative;
+  }
+  
+
+  @keyframes transitionIn{
+    from{
+      opacity: 0;
+      transform: rotateX(-10deg);
+    }
+    to{
+      opacity: 1;
+      transform: rotateX(0);
+    }
+  }
